@@ -10,7 +10,10 @@ header{
     color:aliceblue
 }
 .busca{
-    display:flex;  
+    display:flex;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;  
 }
 .busca h1{
     margin-left:45px;
@@ -45,6 +48,10 @@ header{
     border-bottom:1px solid rgba(255, 255, 255, 0.226);
     width:90%;
     margin-left:60px;   
+    font-family: "Lato", sans-serif;
+    font-weight: 10px;
+    font-size: small;
+
 }
 .frete, .pix, .parcelas, .seguro{
   
@@ -128,4 +135,7 @@ button{
     border-radius: 20px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.custom{
+    color:rgb(255, 255, 255)
 }
