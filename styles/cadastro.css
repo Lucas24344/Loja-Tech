@@ -67,3 +67,23 @@ button{
     font-size: 12px;
     margin-top:5px;
 }
+
+.errnome{
+    margin-left:90px;
+    display:none;
+    position:absolute;
+    margin-top:-18px;
+    font-size: 13px;
+    color:rgb(191, 1, 1);
+
+}
+
+.errsenha{
+    margin-left:46px;
+    position:absolute;
+    margin-top:-72px;
+    font-size: 13px;
+    color:rgba(211, 67, 67, 0.854);
+    display:none
+
+}
