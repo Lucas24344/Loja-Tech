@@ -1,3 +1,5 @@
+const db=require("./db");
+console.log("passou")
 function validation(event){
 
     event.preventDefault(event)
