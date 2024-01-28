@@ -32,7 +32,7 @@ form{
     margin-left:35px;
 }
 .cadastro{
-    margin-top: 10px;;
+    margin-top: 15px;;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -86,4 +86,14 @@ button{
     color:rgba(211, 67, 67, 0.854);
     display:none
 
+}
+.errsenha1{
+    margin-left:27px;
+    position:absolute;
+    margin-top:-72px;
+    font-size: 13px;
+    color:rgba(211, 67, 67, 0.854);
+    display:none
+    
+   
 }
