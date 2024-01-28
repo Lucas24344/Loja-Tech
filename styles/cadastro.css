@@ -69,12 +69,12 @@ button{
 }
 
 .errnome{
-    margin-left:90px;
+    margin-right:95px;
     display:none;
     position:absolute;
     margin-top:-18px;
     font-size: 13px;
-    color:rgb(191, 1, 1);
+    color:rgba(211, 67, 67, 0.854);
 
 }
 

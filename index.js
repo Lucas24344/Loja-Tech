@@ -1,24 +1,22 @@
 function validation(event){
 
     event.preventDefault(event)
-    
+    var regexName=/^[a-zA-Z]+(?: [a-zA-Z]+)*$/;
     var regex=/^(?=.*\d)(?=.*[!@#$%^&*])[a-zA-Z\d!@#$%^&*]/;
     var nome=document.getElementById("name").value
     var senha=document.getElementById("password").value
 
+   if(regexName.test(nome)){
 
-   if(regex.test(nome)){
-        document.getElementById("errnome").style.display="block";
+        document.getElementById("errnome").style.display="none";
     }
     else{
-        document.getElementById("errnome").style.display="none";
-        alert("O nome está correto")
+        document.getElementById("name").style.border="2px solid rgba(211, 67, 67, 0.729)";
+        document.getElementById("errnome").style.display="block";
 
     }
-
     if(senha.length>5){
         if(regex.test(senha)){
-            alert("ok")
             document.getElementById("errsenha").style.display="none";
             document.getElementById("errsenha1").style.display="none";
             document.getElementById("password").style.border="";
@@ -35,5 +33,4 @@ function validation(event){
         document.getElementById("errsenha").style.display="block"
         document.getElementById("password").style.border="2px solid rgba(211, 67, 67, 0.729)";
     }
-
 }
