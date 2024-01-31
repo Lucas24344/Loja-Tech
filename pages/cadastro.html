@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <script src="/index.js"></script>
+    <script src="/db.js"></script>
     <link rel="stylesheet" href="../styles/cadastro.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,7 @@
     <div class="logo">
         <h1>Loja Tech</h1>
     </div>
-    <form onsubmit="validation(event)" method="post">
+    <form action="/db.js" method="post" onsubmit="validation(event)">
 
         <div class="cabecalho">
             <text>Cadastre-se</text>

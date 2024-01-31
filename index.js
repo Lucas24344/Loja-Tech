@@ -1,5 +1,6 @@
 const db=require("./db");
-console.log("passou")
+
+console.log("passou");
 function validation(event){
 
     event.preventDefault(event)
@@ -35,4 +36,38 @@ function validation(event){
         document.getElementById("errsenha").style.display="block"
         document.getElementById("password").style.border="2px solid rgba(211, 67, 67, 0.729)";
     }
+    enviarParaServidor();
 }
+
+
+  
+
+
+function enviarParaServidor() {
+    // Obtenha os dados do formulário
+    const nome = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('password').value;
+  
+    // Crie um objeto com os dados
+    const dados = {
+      nome,
+      email,
+      senha
+    };
+  
+    // Faça uma solicitação HTTP (por exemplo, usando fetch) para o servidor
+    fetch('/cadastro', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(dados)
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Resposta do servidor:', data);
+      // Lógica adicional conforme necessário
+    })
+    .catch(error => console.error('Erro na solicitação:', error));
+  }
